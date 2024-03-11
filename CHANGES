@@ -1,3 +1,11 @@
+0.3.5
+
+- Lint
+
+0.3.4
+
+- Fix inspect.getargspec(func)
+
 0.3.3
 
 - The context manager returns the Responses instance
