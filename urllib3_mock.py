@@ -46,7 +46,9 @@ def get_wrapped(func, wrapper_template, evaldict):
     if is_bound_method:
         args = args[1:]     # Omit 'self'
     callargs = inspect.Signature(parameters=[
-        inspect.Parameter(name=name, kind=inspect.Parameter.POSITIONAL_OR_KEYWORD)
+        inspect.Parameter(
+            name=name, kind=inspect.Parameter.POSITIONAL_OR_KEYWORD
+        )
         for name in signature.parameters
     ])
 
